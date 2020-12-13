@@ -13,7 +13,7 @@ namespace MedicineStockModule.Repository
         private static readonly List<MedicineStockDTO> MedicineStockInformation = new List<MedicineStockDTO>() {
             new MedicineStockDTO{Name="Medicine1",
                               ChemicalComposition=new List<string>{"chemical1","chemical2"},
-                              TargetAilment="Orthopaedics",
+                              TargetAilment="Orthopedics",
                               DateOfExpiry=DateTime.Parse("10-10-2021"),
                               NumberOfTabletsInStock=50},
             new MedicineStockDTO{Name="Medicine2",
@@ -28,7 +28,7 @@ namespace MedicineStockModule.Repository
                               NumberOfTabletsInStock=50},
             new MedicineStockDTO{Name="Medicine4",
                               ChemicalComposition=new List<string>{"chemical1","chemical2"},
-                              TargetAilment="Orthopaedics",
+                              TargetAilment="Orthopedics",
                               DateOfExpiry=DateTime.Parse("10-01-2021"),
                               NumberOfTabletsInStock=50},
             new MedicineStockDTO{Name="Medicine5",
@@ -43,8 +43,8 @@ namespace MedicineStockModule.Repository
         {
             
             var MedicineStocklist = from Medicine in MedicineStockInformation select Medicine;
+            log.Info("Medicine Stock retrieved from go-down");
             return MedicineStocklist.ToList();
-            log.Info("Medicine Stock retreived from godown");
         }
     }
 }

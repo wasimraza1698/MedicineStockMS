@@ -9,19 +9,19 @@ namespace MedicineStockModule.Providers
 {
     public class MedicineStockProvider : IMedicineStockProvider
     {
-        private readonly IMedicineStockRepository IMedicineStock;
+        private readonly IMedicineStockRepository _medicineStock;
         public static readonly log4net.ILog log = log4net.LogManager.GetLogger(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType);
 
-        public MedicineStockProvider(IMedicineStockRepository IMedicineStock)
+        public MedicineStockProvider(IMedicineStockRepository medicineStock)
         {
-            this.IMedicineStock = IMedicineStock;
+            _medicineStock = medicineStock;
         }
         public IEnumerable<MedicineStockDTO> GetMedicineStock()
         {
             log.Info("Medicine Stock requested");
-            var MedicineStockList = IMedicineStock.GetAll();
-            log.Info("Medicine Stock Retrived");
-            return MedicineStockList.ToList();
+            var medicineStockList = _medicineStock.GetAll();
+            log.Info("Medicine Stock Retrieved");
+            return medicineStockList.ToList();
            
         }
     }

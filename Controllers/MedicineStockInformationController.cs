@@ -36,16 +36,16 @@ namespace MedicineStockModule.Controllers
                 BasicConfigurator.Configure();
                 if (res != null)
                 { 
-                    log.Info("Medicine Stock Retrived");
+                    log.Info("Medicine Stock Retrieved");
                     return Ok(res.ToList());
                 }
                 log.Info("No details retrieved");
-                return Content("No such details found please try again.");
+                return NotFound("No such details found please try again.");
             }
             catch(Exception e)
             {
-                log.Error("Excpetion:" + e.Message + " has occurred while trying to retrieve stock info.");
-                return Content("The following exception has occurred while retreving the stock." + e.Message + " Please try again");
+                log.Error("Exception:" + e.Message + " has occurred while trying to retrieve stock info.");
+                return StatusCode(500);
             }
         }
     }
