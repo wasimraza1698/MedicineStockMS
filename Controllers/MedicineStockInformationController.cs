@@ -7,14 +7,16 @@ using System.Threading.Tasks;
 using System.IO;
 using log4net;
 using log4net.Config;
+using Microsoft.AspNetCore.Authorization;
 
 
 [assembly: log4net.Config.XmlConfigurator(ConfigFile = "Log4net.config", Watch = true)]
 namespace MedicineStockModule.Controllers
 {
+    [Authorize]
     [ApiController]
     [Route("[controller]")]
-    public class MedicineStockInformationController : Controller
+    public class MedicineStockInformationController : ControllerBase
     {
         
         public static readonly log4net.ILog log = log4net.LogManager.GetLogger(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType);
