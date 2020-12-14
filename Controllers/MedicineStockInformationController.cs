@@ -13,7 +13,6 @@ using Microsoft.AspNetCore.Authorization;
 [assembly: log4net.Config.XmlConfigurator(ConfigFile = "Log4net.config", Watch = true)]
 namespace MedicineStockModule.Controllers
 {
-    [Authorize]
     [ApiController]
     [Route("[controller]")]
     public class MedicineStockInformationController : ControllerBase
