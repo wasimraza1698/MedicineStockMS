@@ -7283,11 +7283,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\wasim\\OneDrive\\Desktop\\MFPE\\MedicineStockModule-master\\MedicineStockModule\\MedicineStockModule.csproj",
+      "projectUniqueName": "C:\\Users\\wasim\\OneDrive\\Desktop\\MFPE\\MedicineStock\\MedicineStockModule\\MedicineStockModule.csproj",
       "projectName": "MedicineStockModule",
-      "projectPath": "C:\\Users\\wasim\\OneDrive\\Desktop\\MFPE\\MedicineStockModule-master\\MedicineStockModule\\MedicineStockModule.csproj",
+      "projectPath": "C:\\Users\\wasim\\OneDrive\\Desktop\\MFPE\\MedicineStock\\MedicineStockModule\\MedicineStockModule.csproj",
       "packagesPath": "C:\\Users\\wasim\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\wasim\\OneDrive\\Desktop\\MFPE\\MedicineStockModule-master\\MedicineStockModule\\obj\\",
+      "outputPath": "C:\\Users\\wasim\\OneDrive\\Desktop\\MFPE\\MedicineStock\\MedicineStockModule\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\wasim\\AppData\\Roaming\\NuGet\\NuGet.Config",

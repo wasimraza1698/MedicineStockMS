@@ -24,3 +24,4 @@
 2020-12-11 17:44:48,016 [14] INFO  MedicineStockModule.Providers.MedicineStockProvider [(null)] - Medicine Stock requested
 2020-12-11 17:44:48,019 [14] INFO  MedicineStockModule.Providers.MedicineStockProvider [(null)] - Medicine Stock Retrived
 2020-12-11 17:44:48,021 [14] INFO  MedicineStockModule.Controllers.MedicineStockInformationController [(null)] - Medicine Stock Retrived
+2020-12-16 00:12:22,373 [NonParallelWorker] INFO  MedicineStockModule.Controllers.MedicineStockInformationController [(null)] - Medicine Stock Retrieved
